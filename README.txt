@@ -2,9 +2,6 @@ IMPORTANTE - V7.1 HOTFIX
 La calibracion ya no bloquea el control y ahora existe fallback de una mano.
 Para diagnosticar primero ejecuta PRUEBA_HID.bat.
 
-HOLOTOUCH V7 PRO
-================
-
 Version USB avanzada:
 PC camera -> Python/MediaPipe -> USB CDC -> ESP32-S3 -> USB HID
 
@@ -33,9 +30,7 @@ fondos y posiciones. V7 esta configurado para exigir gestos deliberados y reduci
 mucho respecto a una deteccion directa sin filtros.
 
 
-============================================================
 1. CONEXIONES
-============================================================
 
 OLED 0.96" 128x64 I2C:
 VCC -> 3V3
@@ -51,10 +46,8 @@ No necesita resistencia externa porque el firmware usa INPUT_PULLUP.
 Puedes probar primero con el puro ESP32-S3 por USB.
 El firmware sigue funcionando aunque OLED o boton no esten conectados.
 
-
-============================================================
 2. ARDUINO IDE
-============================================================
+
 
 Board Manager:
 - esp32 by Espressif Systems
@@ -95,10 +88,8 @@ Despues de subir:
 2. Desconecta/conecta o pulsa RESET si hace falta.
 3. Ejecuta PRUEBA_USB.bat.
 
-
-============================================================
 3. INSTALAR EN WINDOWS
-============================================================
+
 
 Ejecuta una sola vez:
 INSTALAR.bat
@@ -118,9 +109,7 @@ Uso:
 INICIAR.bat
 
 
-============================================================
 4. ROLES DE LAS DOS MANOS
-============================================================
 
 Por defecto:
 IZQUIERDA = CURSOR
@@ -139,10 +128,8 @@ Tambien puedes editar:
 Si MediaPipe te muestra izquierda/derecha al reves:
 "swap_handedness": true
 
-
-============================================================
 5. GESTOS
-============================================================
+
 
 MANO CURSOR
 -----------
@@ -192,10 +179,7 @@ juntar = zoom -
 Dos palmas abiertas mantenidas:
 bloquear / desbloquear HOLOTOUCH.
 
-
-============================================================
 6. MODOS Y PERFILES
-============================================================
 
 BOTON:
 toque corto = siguiente modo
@@ -223,10 +207,8 @@ APP = perfil efectivo de la aplicacion
 
 Puedes agregar procesos en app_profiles dentro de config.json.
 
-
-============================================================
 7. ACCIONES POR PERFIL
-============================================================
+
 
 MOUSE/BROWSER:
 pinza principal = click
@@ -263,9 +245,8 @@ swipe L/R = deshacer/rehacer
 swipe U/D = Page Up/Page Down
 
 
-============================================================
 8. MENU RADIAL
-============================================================
+
 
 MOUSE:
 izquierda = COPIAR
@@ -294,9 +275,8 @@ deshacer / rehacer / copiar / pegar
 Se edita en radial_menu de config.json.
 
 
-============================================================
 9. INTERFAZ DE CAMARA
-============================================================
+
 
 HUD:
 - USB
@@ -325,9 +305,8 @@ F = pantalla completa
 ESC o Q = salir
 
 
-============================================================
 10. FILTROS DE PRECISION
-============================================================
+
 
 V7 no ejecuta una accion apenas ve una forma.
 
@@ -350,9 +329,7 @@ Usa:
 - puno como cancelacion HID
 
 
-============================================================
 11. PERSONALIZAR
-============================================================
 
 config.json contiene:
 - sensibilidad
@@ -373,9 +350,8 @@ mouse_gain
 swipe_min_px
 
 
-============================================================
 12. USARLO SIN ABRIR EL SCRIPT CADA VEZ
-============================================================
+
 
 La webcam pertenece al PC y MediaPipe tambien corre en el PC.
 Por eso el ESP32-S3 solo no puede reconocer estas manos usando la webcam del PC.
@@ -398,9 +374,3 @@ Si quieres que funcione con CERO software en el PC, entonces el reconocimiento t
 que mudarse a hardware propio con camara/procesador capaz de hacer vision; con la
 arquitectura actual del ESP32-S3 + webcam del PC, el programa de PC sigue siendo necesario.
 
-============================================================
-11. NOTA SOBRE VERSION SIN SCRIPT / EXE
-============================================================
-
-Esta entrega V7 se concentra en tracking, gestos, USB HID, OLED, boton y perfiles.
-La conversion a EXE/autoarranque se deja para la siguiente etapa, tal como se acordo.
