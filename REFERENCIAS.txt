@@ -1,0 +1,15 @@
+HOLOTOUCH V7 PRO - referencias de diseño
+
+Este proyecto conserva su propia arquitectura, firmware y código.
+Se tomaron como inspiración conceptual ideas públicas de interacción de:
+- jaredrhod/barehands
+- jaredrhod/fullstack-agent
+
+Ideas adoptadas/reinterpretadas:
+- Umbrales normalizados por proporciones de la mano en vez de depender solo de pixeles.
+- Interacciones deliberadas con dos manos.
+- Gating temporal / estabilidad antes de ejecutar gestos sensibles.
+- HUD minimalista y herramientas de ajuste/calibración.
+
+No se copió código fuente de esos proyectos dentro de HOLOTOUCH V7.
+barehands/fullstack-agent se publican bajo AGPL-3.0-or-later; revisa su licencia si en el futuro decides reutilizar código directamente.

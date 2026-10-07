@@ -1,0 +1,33 @@
+HOLOTOUCH V7 PRO - GESTOS RAPIDOS
+
+ROLES POR DEFECTO
+Izquierda = CURSOR
+Derecha = ACCIONES
+Doble toque al boton o tecla X = intercambiar roles.
+
+MANO CURSOR
+- Indice solo: mover cursor.
+- Indice + medio: scroll.
+- Pulgar + anular mientras apuntas: modo precision.
+
+MANO ACCIONES
+- Pulgar + indice: accion principal.
+  En perfiles de mouse: soltar = click; mantener = drag.
+- Pulgar + medio: accion secundaria.
+- 3 dedos mantenidos: accion especial.
+- Palma abierta moviendose: swipe.
+- Palma abierta quieta: abre menu radial; desplaza la palma hacia una opcion y mantenla brevemente.
+- Puno mantenido: fail-safe / cancelar HID.
+
+DOS MANOS
+- Pinza pulgar+indice en ambas: separar = zoom +, juntar = zoom -.
+- Ambas palmas abiertas mantenidas: bloquear/desbloquear HOLOTOUCH.
+
+BOTON FISICO
+- Corto: modo siguiente.
+- Doble: intercambia CURSOR/ACCIONES.
+- Largo: bloquea/desbloquea.
+
+TECLAS PC
+H ayuda | D debug | X swap manos | C recalibrar | A auto-perfiles | R reconectar | F fullscreen
+1 MOUSE | 2 MEDIA | 3 PRESENT | 4 NAV | ESC/Q salir
