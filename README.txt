@@ -374,3 +374,6 @@ Si quieres que funcione con CERO software en el PC, entonces el reconocimiento t
 que mudarse a hardware propio con camara/procesador capaz de hacer vision; con la
 arquitectura actual del ESP32-S3 + webcam del PC, el programa de PC sigue siendo necesario.
 
+
+
+Próximamente V12 con Actualización fundamental para el proyecto, mejor dicho próximamente Akyra!!
